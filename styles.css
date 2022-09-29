@@ -132,16 +132,16 @@ main {
     .card-two {
         grid-area: two;
         border-bottom-left-radius: 1rem;
-        padding: 2rem;
+        padding: 1rem, 2rem, 0, 2rem;
     }
 
     .card-three {
         grid-area: three;
         border-bottom-left-radius: 0;
-        padding: 2rem;
+        padding: 1rem, 2rem, 0, 2rem;
     }
 
     .card-three p {
-        line-height: 1.4rem;
+        line-height: 1.3rem;
     }
 }

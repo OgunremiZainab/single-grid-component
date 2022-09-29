@@ -1,0 +1,147 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: rgb(36, 196, 193);
+    --yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --dark-gray: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+}
+
+/* typography */
+
+body {
+font-family: 'Karla', sans-serif;
+}
+
+.card-one h2 {
+    color: var(--cyan);
+    margin-bottom: 1.3rem;
+}
+
+.card-one h3 {
+    color: var(--yellow);
+    margin-bottom: 1.3rem;
+}
+
+p {
+    color: var(--light-gray);
+    line-height: 1.5rem;
+}
+
+.card-one p{
+    color: var(--dark-gray);
+}
+
+.card-two h3 {
+    color: var(--light-gray);
+    margin-bottom: 1.3rem;
+}
+
+.card-two h1 {
+    color: var(--light-gray);
+
+}
+
+.pg-1 {
+    margin-top: -1.9rem;
+    margin-left: 4.6rem;
+    font-weight: 400;
+}
+
+.pg-2 {
+    margin-top: 0.7rem;
+}
+
+button {
+    width: 100%;
+    background-color: var(--yellow);
+    color: var(--light-gray);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 1.9rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+
+.card-three h3 {
+    color: var(--light-gray);
+    margin-bottom: 1.4rem;
+}
+
+
+/* layout */
+
+body {
+    background-color: var(--light-gray);
+}
+
+main {
+    width: 90%;
+    max-width: 375px;
+    margin: 5rem auto;
+}
+
+.card-one {
+    background-color: white;
+    padding: 1.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card-two {
+    background-color: var(--cyan);
+    padding: 1.5rem;   
+}
+
+.card-three {
+    background-color: var(--light-cyan);
+    padding: 1.5rem;
+    border-bottom-left-radius: 
+    1rem;
+    border-bottom-right-radius: 1rem; 
+}
+
+
+/* media query */
+
+@media (min-width: 850px) {
+
+    main {
+        width: 70%;
+
+        max-width: 600px;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-areas:
+        'one one'
+        'two three';
+        grid-auto-columns: 1fr;
+    }
+
+    .card-one {
+        grid-area: one;
+        padding: 2rem;
+    }
+
+    .card-two {
+        grid-area: two;
+        border-bottom-left-radius: 1rem;
+        padding: 2rem;
+    }
+
+    .card-three {
+        grid-area: three;
+        border-bottom-left-radius: 0;
+        padding: 2rem;
+    }
+
+    .card-three p {
+        line-height: 1.4rem;
+    }
+}
